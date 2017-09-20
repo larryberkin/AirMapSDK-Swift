@@ -41,14 +41,14 @@ class AirMapUnitFormatter {
 		}
 	}
 	
-	static func localizedAltitude(from meters: Meters) -> String {
+	static func localizedAltitude(from feet: Feet) -> String {
 		switch AirMap.configuration.distanceUnits {
 		case .metric:
 			distance.numberFormatter.roundingIncrement = 100
-			return distance.string(fromValue: meters, unit: .meter)
+			return distance.string(fromValue: feet.meters, unit: .meter)
 		case .imperial:
 			distance.numberFormatter.maximumFractionDigits = 0
-			return distance.string(fromValue: meters.feet, unit: .foot)
+			return distance.string(fromValue: feet, unit: .foot)
 		}
 	}
 	
