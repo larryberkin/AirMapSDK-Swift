@@ -27,11 +27,12 @@ Pod::Spec.new do |s|
 		core.ios.frameworks = 'UIKit'
 		core.osx.frameworks = 'AppKit'
 		core.source_files = ['Source/Core/**/*.{h,m,swift}', 'Source/Rx/*']
-		core.dependency 'Alamofire'
-		core.dependency 'ObjectMapper'
+		core.dependency 'Alamofire', '4.5.0'
+		core.dependency 'ObjectMapper', '2.2.9'
+		core.dependency 'SwiftTurf'
 		core.dependency 'SimpleKeychain'
 		core.dependency 'JWTDecode'
-		core.dependency 'RxSwift'
+		core.dependency 'RxSwift', '~> 3.6.1'
 		core.dependency 'RxSwiftExt'
 		core.dependency 'RxCocoa'
 		core.dependency 'Log'
@@ -44,12 +45,11 @@ Pod::Spec.new do |s|
 		ui.frameworks = 'UIKit'
 		ui.dependency 'AirMapSDK/Core'
 		ui.dependency 'libPhoneNumber-iOS'
-		ui.dependency 'PhoneNumberKit'
-		ui.dependency 'RxDataSources'
-		ui.dependency 'Mapbox-iOS-SDK'
-		ui.dependency 'Lock', '>= 2.3.1'
+		ui.dependency 'PhoneNumberKit', '1.3.0'
+		ui.dependency 'RxDataSources', '2.0.1'
+		ui.dependency 'Mapbox-iOS-SDK', '< 3.6'
+		ui.dependency 'Lock', '2.3.1'
 		ui.dependency 'SwiftSimplify'
-		ui.dependency 'SwiftTurf'
 		ui.source_files = 'Source/UI/**/{*.swift}'
 		ui.resources = ['Resources/UI/*.{xcassets}', 'Resources/UI/Localizations/**/*']
 	end
@@ -66,7 +66,7 @@ Pod::Spec.new do |s|
 		telemetry.dependency 'AirMapSDK/Core'
 		telemetry.dependency 'CocoaAsyncSocket', '~> 7.6.0'
 		telemetry.dependency 'CryptoSwift'
-		telemetry.dependency 'ProtocolBuffers-Swift', '~> 3.0.21'
+		telemetry.dependency 'ProtocolBuffers-Swift', '3.0.22'
 		telemetry.source_files = 'Source/Telemetry/*'
 	end
 	
