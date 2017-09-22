@@ -1,10 +1,10 @@
 PODS:
-  - AirMapSDK (1.0.3):
-    - AirMapSDK/Core (= 1.0.3)
-    - AirMapSDK/Telemetry (= 1.0.3)
-    - AirMapSDK/Traffic (= 1.0.3)
-    - AirMapSDK/UI (= 1.0.3)
-  - AirMapSDK/Core (1.0.3):
+  - AirMapSDK (1.0.2):
+    - AirMapSDK/Core (= 1.0.2)
+    - AirMapSDK/Telemetry (= 1.0.2)
+    - AirMapSDK/Traffic (= 1.0.2)
+    - AirMapSDK/UI (= 1.0.2)
+  - AirMapSDK/Core (1.0.2):
     - Alamofire
     - JWTDecode
     - Log
@@ -13,20 +13,20 @@ PODS:
     - RxSwift
     - RxSwiftExt
     - SimpleKeychain
-  - AirMapSDK/Telemetry (1.0.3):
+  - AirMapSDK/Telemetry (1.0.2):
     - AirMapSDK/Core
     - CocoaAsyncSocket (~> 7.6.0)
     - CryptoSwift
     - ProtocolBuffers-Swift (= 3.0.22)
-  - AirMapSDK/Traffic (1.0.3):
+  - AirMapSDK/Traffic (1.0.2):
     - AirMapSDK/Core
     - SwiftMQTT
-  - AirMapSDK/UI (1.0.3):
+  - AirMapSDK/UI (1.0.2):
     - AirMapSDK/Core
     - libPhoneNumber-iOS
-    - Lock (>= 2.3.1)
+    - Lock (= 2.3.1)
     - Mapbox-iOS-SDK
-    - PhoneNumberKit
+    - PhoneNumberKit (= 1.3.0)
     - RxDataSources
     - SwiftSimplify
     - SwiftTurf
@@ -34,7 +34,7 @@ PODS:
   - Auth0 (1.7.1):
     - SimpleKeychain
   - CocoaAsyncSocket (7.6.1)
-  - CryptoSwift (0.6.9)
+  - CryptoSwift (0.7.2)
   - Differentiator (2.0.0)
   - JWTDecode (2.0.0)
   - libPhoneNumber-iOS (0.9.10)
@@ -89,6 +89,7 @@ PODS:
 DEPENDENCIES:
   - AirMapSDK (from `../`)
   - Alamofire (~> 4.0)
+  - CryptoSwift (from `https://github.com/krzyzanowskim/CryptoSwift/`, branch `develop`)
   - Mapbox-iOS-SDK
   - Nimble
   - OHHTTPStubs
@@ -98,14 +99,22 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   AirMapSDK:
-    :path: "../"
+    :path: ../
+  CryptoSwift:
+    :branch: develop
+    :git: https://github.com/krzyzanowskim/CryptoSwift/
+
+CHECKOUT OPTIONS:
+  CryptoSwift:
+    :commit: e0169745269731adf09b3ed17831aa571cd5bee3
+    :git: https://github.com/krzyzanowskim/CryptoSwift/
 
 SPEC CHECKSUMS:
-  AirMapSDK: 94972c7da7599d62746f6b87b84e15d7cc67276a
+  AirMapSDK: bc04653785ad31018ceb0b5a2b1f587acd9b9e4d
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   Auth0: b23f0d9f45bdcd70652f5427d3411519d79ddaa1
   CocoaAsyncSocket: 7eadd3f59e1a6c84e2aefc93e9ff7b55156fe174
-  CryptoSwift: a22f6ba238e9ce4d26ee7bf45b9ed82e7122d4a0
+  CryptoSwift: 43aed86b4b52edc487058ff2f0a4c554e57f9cf2
   Differentiator: 699dc1c1c72a2fcc4ba53c596c77c45fd1ead315
   JWTDecode: 178e47e5d28d3abcff778bacced8342858cd6cb5
   libPhoneNumber-iOS: f721ae4d5854bce60934f9fb9b0b28e8e68913cb
@@ -115,7 +124,7 @@ SPEC CHECKSUMS:
   Nimble: 657d000e11df8aebe27cdaf9d244de7f30ed87f7
   ObjectMapper: 3d571bb5af471c779e1160828cd9ad5c4ef90958
   OHHTTPStubs: 752f9b11fd810a15162d50f11c06ff94f8e012eb
-  PhoneNumberKit: '08aaf1968ea41a114327e9223cbb0391d76ae145'
+  PhoneNumberKit: 08aaf1968ea41a114327e9223cbb0391d76ae145
   ProtocolBuffers-Swift: ac5867ab2acc97ca67f5ec6a62b654bd31563028
   Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
   RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
@@ -127,6 +136,6 @@ SPEC CHECKSUMS:
   SwiftSimplify: 374ead1c360c6e236539543d6ce5b3abda011080
   SwiftTurf: 1b92524e162f0cabe646d30bfe33eba6fcaf6239
 
-PODFILE CHECKSUM: 5034432130bcc1f2ecca9363b549338aa6148330
+PODFILE CHECKSUM: 632895e163a53506f7a039eb2d42120b3fa122d9
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1

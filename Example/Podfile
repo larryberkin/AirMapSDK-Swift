@@ -6,6 +6,7 @@ target 'AirMapSDK-Example-iOS' do
 	pod 'AirMapSDK', :path => '../'
 	pod 'Mapbox-iOS-SDK'
 	pod 'SwiftTurf'
+	pod 'CryptoSwift', :git => 'https://github.com/krzyzanowskim/CryptoSwift/', :branch => 'develop'
 end
 
 target 'AirMapSDKTests' do

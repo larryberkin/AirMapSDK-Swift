@@ -14,7 +14,7 @@ class MapViewController: UIViewController {
 	
 	@IBOutlet weak var mapView: AirMapMapView!
 	
-	private let mapLayers: [AirMapLayerType] = [.essentialAirspace, .tfrs]
+	private let mapLayers: [AirMapLayerType] = [.essentialAirspace, .emergencies]
 	private let mapTheme: AirMapMapTheme = .standard
 	
 	override func viewDidLoad() {

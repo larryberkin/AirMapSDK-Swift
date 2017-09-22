@@ -15,7 +15,7 @@ class AirMapPhoneTextView: UITextView {
 		if action == #selector(UITextView.select)
 			|| action == #selector(UITextView.selectAll)
 			|| action == #selector(UITextView.cut)
-			|| action == #selector(UITextView.paste)
+			|| action == #selector(UITextView.paste(_:))
 			|| action == #selector(UITextView.delete)
 		{
 			return false
