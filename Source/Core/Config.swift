@@ -54,7 +54,7 @@ struct Config {
 			return "\(host)/\(named)/" + (AirMap.configuration.environment ?? "\(version)")
 		}
 		
-		static let mapStyleVersion = "0.7.2"
+		static let mapStyleVersion = "0.7.3"
 		static var mapStylePath: String {
 			let env = AirMap.configuration.environment ?? "prod"
 			if env == "prod" {
