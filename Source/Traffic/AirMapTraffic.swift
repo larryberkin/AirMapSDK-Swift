@@ -145,8 +145,14 @@ extension AirMapTraffic {
 				distanceString = lengthFormatter.string(fromValue: miles, unit: .mile)
 			}
 
-			let seconds = Int(AirMapTrafficServiceUtils.secondsFromDistanceAndSpeed(distance, speedInKts: groundSpeed))
-			let timeString = timeFormatter.string(from: DateComponents(second: seconds))!
+			// Set timestring to unknown
+			var timeString = ""
+			
+			// GroundSpeed must be grater than zero when calculating secondsFromDistanceAndSpeed
+			if groundSpeed > 0 {
+				let seconds = Int(AirMapTrafficServiceUtils.secondsFromDistanceAndSpeed(distance, speedInKts: groundSpeed))
+				timeString = timeFormatter.string(from: DateComponents(second: seconds))!
+			}
 			
 			let alertFormat = LocalizedStrings.Traffic.alertWithAircraftIdAndDistanceFormat
 			return String(format: alertFormat, aircraftId, altitudeString, distanceString, direction, timeString)
