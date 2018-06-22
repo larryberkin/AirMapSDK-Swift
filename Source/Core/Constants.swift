@@ -55,6 +55,7 @@ struct Constants {
 			static let scope = "openid offline_access email"
 			static let grantType = "urn:ietf:params:oauth:grant-type:jwt-bearer"
 			static let keychainKeyRefreshToken = "com.airmap.airmapsdk.refresh_token"
+			static let tokenSwap = "https://auth.airmap.io"
 			static let termsOfServiceUrl = "https://www.\(AirMap.configuration.airMapDomain)/terms"
 			static let privacyPolicyUrl = "https://www.\(AirMap.configuration.airMapDomain)/privacy"
 		}

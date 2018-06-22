@@ -165,6 +165,10 @@ extension Reactive where Base: AirMap {
     public static func verifyPasswordlessLogin(with phoneNumber: String, code: String) -> Observable<Auth0Credentials> {
         return AirMap.auth0Client.verifyPasswordlessLogin(with: phoneNumber, code: code)
     }
+
+	public static func swapToken(with jwt: String) -> Observable<AirMapSwapToken> {
+		return AirMap.swapTokenClient.performSwap(jwt: jwt)
+	}
 }
 
 /// Documentation found in AirMap+Auth0.swift

@@ -66,7 +66,15 @@ extension AirMap {
 	public static func verifyPasswordlessLogin(with phoneNumber: String, code: String, completion: @escaping (Result<Auth0Credentials>) -> Void) {
         auth0Client.verifyPasswordlessLogin(with: phoneNumber, code: code).thenSubscribe(completion)
     }
-    
+
+	/// Swaps an AirMap jwt for a jwt usable with third parties
+	///
+	/// - Parameters:
+	///   - jwt: Current users jwt token
+	public static func swapToken(with jwt: String, completion: @escaping (Result<AirMapSwapToken>) -> Void) {
+		swapTokenClient.performSwap(jwt: jwt).thenSubscribe(completion)
+	}
+
     /// Log out the currently authenticated pilot
     public static func logout() {
         authToken = nil

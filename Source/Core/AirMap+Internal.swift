@@ -18,6 +18,7 @@ extension AirMap {
 	internal static let airspaceClient = AirspaceClient()
 	internal static let auth0Client = Auth0Client()
     internal static let authClient = AuthClient()
+	internal static let swapTokenClient = SwapTokenClient()
 	internal static let flightClient = FlightClient()
 	internal static let flightPlanClient = FlightPlanClient()
 	internal static let pilotClient = PilotClient()
