@@ -642,7 +642,7 @@ extension AirMapRule: ImmutableMappable {
 extension AirMapSwapToken: ImmutableMappable {
 
 	public init(map: Map) throws {
-		jwt = try? map.value("jwt:")
+		jwt = try? map.value("jwt")
 	}
 }
 
