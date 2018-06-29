@@ -71,8 +71,8 @@ extension AirMap {
 	///
 	/// - Parameters:
 	///   - jwt: Current users jwt token
-	public static func swapToken(with jwt: String, completion: @escaping (Result<AirMapSwapToken>) -> Void) {
-		swapTokenClient.performSwap(jwt: jwt).thenSubscribe(completion)
+	public static func swapJwt(with jwt: String, completion: @escaping (Result<AirMapSwapJwt>) -> Void) {
+		swapJwtClient.performSwap(jwt: jwt).thenSubscribe(completion)
 	}
 
     /// Log out the currently authenticated pilot

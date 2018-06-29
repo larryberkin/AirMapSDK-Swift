@@ -637,9 +637,9 @@ extension AirMapRule: ImmutableMappable {
 	}
 }
 
-// MARK: - AirMapSwapToken
+// MARK: - AirMapSwapJwt
 
-extension AirMapSwapToken: ImmutableMappable {
+extension AirMapSwapJwt: ImmutableMappable {
 
 	public init(map: Map) throws {
 		jwt = try? map.value("jwt")

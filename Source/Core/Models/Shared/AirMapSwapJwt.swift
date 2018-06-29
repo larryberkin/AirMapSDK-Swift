@@ -1,5 +1,5 @@
 //
-//  AirMapSwapToken.swift
+//  AirMapSwapJwt.swift
 //  AirMap
 //
 //  Created by Michael Odere on 6/21/18.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct AirMapSwapToken {
+public struct AirMapSwapJwt {
 
 	public var jwt: String?
 }
