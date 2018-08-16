@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4CCB045C20DC4C9600E5452B /* SwapTokenClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCB045B20DC4C9600E5452B /* SwapTokenClient.swift */; };
-		4CCB045F20DC5E1A00E5452B /* AirMapSwapToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCB045E20DC5E1A00E5452B /* AirMapSwapToken.swift */; };
+		4CF1692E2125F0BB00523FAE /* SwapJwtClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF1692D2125F0BB00523FAE /* SwapJwtClient.swift */; };
+		4CF169302125F0CC00523FAE /* AirMapSwapJwt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF1692F2125F0CC00523FAE /* AirMapSwapJwt.swift */; };
 		9101AEE820DA5A1A00376C1A /* AirMapTrafficProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9101AE5A20DA5A1A00376C1A /* AirMapTrafficProperties.swift */; };
 		9101AEE920DA5A1A00376C1A /* CLLocation+AirMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9101AE5B20DA5A1A00376C1A /* CLLocation+AirMap.swift */; };
 		9101AEEA20DA5A1A00376C1A /* TrafficClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9101AE5C20DA5A1A00376C1A /* TrafficClient.swift */; };
@@ -155,8 +155,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4CCB045B20DC4C9600E5452B /* SwapTokenClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapTokenClient.swift; sourceTree = "<group>"; };
-		4CCB045E20DC5E1A00E5452B /* AirMapSwapToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirMapSwapToken.swift; sourceTree = "<group>"; };
+		4CF1692D2125F0BB00523FAE /* SwapJwtClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwapJwtClient.swift; sourceTree = "<group>"; };
+		4CF1692F2125F0CC00523FAE /* AirMapSwapJwt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirMapSwapJwt.swift; sourceTree = "<group>"; };
 		9101AE5A20DA5A1A00376C1A /* AirMapTrafficProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirMapTrafficProperties.swift; sourceTree = "<group>"; };
 		9101AE5B20DA5A1A00376C1A /* CLLocation+AirMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+AirMap.swift"; sourceTree = "<group>"; };
 		9101AE5C20DA5A1A00376C1A /* TrafficClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrafficClient.swift; sourceTree = "<group>"; };
@@ -470,8 +470,8 @@
 				9101AE8920DA5A1A00376C1A /* PilotClient.swift */,
 				9101AE8A20DA5A1A00376C1A /* FlightPlanClient.swift */,
 				9101AE8B20DA5A1A00376C1A /* Auth0Client.swift */,
-				4CCB045B20DC4C9600E5452B /* SwapTokenClient.swift */,
 				9101AE8C20DA5A1A00376C1A /* AircraftClient.swift */,
+				4CF1692D2125F0BB00523FAE /* SwapJwtClient.swift */,
 				9101AE8D20DA5A1A00376C1A /* HTTPClient.swift */,
 				9101AE8E20DA5A1A00376C1A /* AuthClient.swift */,
 				9101AE8F20DA5A1A00376C1A /* FlightClient.swift */,
@@ -546,10 +546,10 @@
 			children = (
 				9101AEAA20DA5A1A00376C1A /* AirMapError.swift */,
 				9101AEAB20DA5A1A00376C1A /* AirMapUnits.swift */,
+				4CF1692F2125F0CC00523FAE /* AirMapSwapJwt.swift */,
+				9101AEAE20DA5A1A00376C1A /* AirMapToken.swift */,
 				9101AEAC20DA5A1A00376C1A /* AuthCredentials.swift */,
 				9101AEAD20DA5A1A00376C1A /* Auth0Error.swift */,
-				9101AEAE20DA5A1A00376C1A /* AirMapToken.swift */,
-				4CCB045E20DC5E1A00E5452B /* AirMapSwapToken.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -853,6 +853,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF169302125F0CC00523FAE /* AirMapSwapJwt.swift in Sources */,
 				9101AEF320DA5A1A00376C1A /* AirMapPhoneCountryViewController.swift in Sources */,
 				9101AF1520DA5A1A00376C1A /* AuthClient.swift in Sources */,
 				9101AF0920DA5A1A00376C1A /* AirMapAircraftNavController.swift in Sources */,
@@ -867,7 +868,6 @@
 				9101AF1C20DA5A1A00376C1A /* AirMap+Pilot.swift in Sources */,
 				9101AF2720DA5A1A00376C1A /* AirMapPolygon.swift in Sources */,
 				9101AEFE20DA5A1A00376C1A /* AirMapMapView+Rx.swift in Sources */,
-				4CCB045F20DC5E1A00E5452B /* AirMapSwapToken.swift in Sources */,
 				9101AF1420DA5A1A00376C1A /* HTTPClient.swift in Sources */,
 				9101AF1920DA5A1A00376C1A /* AirspaceClient.swift in Sources */,
 				9101AF0820DA5A1A00376C1A /* AirMapPhoneVerificationNavController.swift in Sources */,
@@ -917,8 +917,8 @@
 				9101AF2520DA5A1A00376C1A /* Result.swift in Sources */,
 				9101AF2C20DA5A1A00376C1A /* AirMapUnits.swift in Sources */,
 				9101AF0E20DA5A1A00376C1A /* AirMapFlightAnnotation.swift in Sources */,
-				4CCB045C20DC4C9600E5452B /* SwapTokenClient.swift in Sources */,
 				9101AF8320DA67AC00376C1A /* Airmap.Telemetry.Telemetry.proto.swift in Sources */,
+				4CF1692E2125F0BB00523FAE /* SwapJwtClient.swift in Sources */,
 				9101AF0420DA5A1A00376C1A /* Loading.swift in Sources */,
 				9101AF1620DA5A1A00376C1A /* FlightClient.swift in Sources */,
 				9101AF1A20DA5A1A00376C1A /* AirMap+Flights.swift in Sources */,
